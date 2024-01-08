@@ -28,14 +28,5 @@ public class PlayerMovement : MonoBehaviour
         Jump = Input.GetAxis("Vertical");
         rb.velocity = new Vector2(Move*Speed, rb.velocity.y);
         movement_animator.SetFloat("Speed",Mathf.Abs(Move));
-
-
-        // Vector3 movement = new Vector3(Move, 0.0f, Jump);
-        // transform.rotation = Quaternion.LookRotation(rb.velocity);
-        
-        
-        // transform.Translate (movement * Speed * Time.deltaTime, Space.World);
-
-
     }
 }
